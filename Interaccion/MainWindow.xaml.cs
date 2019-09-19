@@ -23,9 +23,29 @@ namespace Interaccion
         public MainWindow()
         {
             InitializeComponent();
+
+            btnBoton.Click += BtnBoton_Click;
+        }
+
+        private void BtnBoton_Click(object sender, RoutedEventArgs e)
+        {
             lblIntro.Text = "¡Me cago en todo lo cagable!";
             lblIntro.FontSize = 60;
             lblIntro.Foreground = Brushes.Red;
+        }
+
+        private void BtnBoton2_Click(object sender, RoutedEventArgs e)
+        {
+            lblIntro.Text = "¡No me lo creo!";
+            lblIntro.FontSize = 60;
+            lblIntro.Foreground = Brushes.Fuchsia;
+        }
+
+        private void BtnBoton3_Click(object sender, RoutedEventArgs e)
+        {
+            lblIntro.Text = "¡Flipo tio!";
+            lblIntro.FontSize = 60;
+            lblIntro.Foreground = Brushes.BlueViolet;
         }
     }
 }
